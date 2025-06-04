@@ -1,12 +1,10 @@
-// alx-project-0x00/interfaces/index.ts
+// interfaces/index.ts
 
-export interface User {
-  id: string;
-  name: string;
-  email: string;
-  isLoggedIn: boolean;
+export interface ButtonProps {
+  styles: string;
+  text: string;
 }
 
-export interface Theme {
-  mode: 'light' | 'dark';
+export interface PillProps {
+  title: string;
 }

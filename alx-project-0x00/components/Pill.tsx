@@ -1,24 +1,13 @@
-// alx-project-0x00/components/Pill.tsx
-import React from 'react';
+// components/Pill.tsx
 
-type PillProps = {
-  label: string;
-  color?: string;
-};
+import React from "react";
+import { PillProps } from "@/interfaces";
 
-const Pill: React.FC<PillProps> = ({ label, color = 'gray' }) => {
+const Pill: React.FC<PillProps> = ({ title }) => {
   return (
-    <span
-      style={{
-        backgroundColor: color,
-        padding: '4px 12px',
-        borderRadius: '20px',
-        color: 'white',
-        fontSize: '0.875rem',
-      }}
-    >
-      {label}
-    </span>
+    <div className="px-3 py-1 bg-gray-200 text-gray-800 rounded-full text-sm">
+      {title}
+    </div>
   );
 };
 
