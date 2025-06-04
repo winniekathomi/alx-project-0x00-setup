@@ -1,11 +1,15 @@
 import React from "react";
+import Button from "@/components/Button";
 
-const Landing: React.FC = () => {
+export default function Landing() {
   return (
-    <div>
-      <h1 className="text-xl font-extralight">Landing Page</h1>
+    <div className="p-6">
+      <h1 className="text-2xl font-bold mb-4">Landing Page</h1>
+      <div className="space-x-4">
+        <Button shape="rounded-sm">Small</Button>
+        <Button shape="rounded-md">Medium</Button>
+        <Button shape="rounded-full">Full</Button>
+      </div>
     </div>
   );
-};
-
-export default Landing;
+}
